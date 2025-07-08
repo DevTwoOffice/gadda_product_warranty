@@ -681,6 +681,7 @@
                         <th>Phone No</th>
                         <th>Order No</th>
                         <th>Date of Purchase</th>
+                        <th>Product Name</th>
                         <th>Address</th>
                         <th>Pincode</th>
                         <th>City</th>
@@ -886,6 +887,7 @@
                     phoneNo: item.cust_phno || '',
                     orderNo: item.order_code || '',
                     dateOfPurchase: item.date || '',
+                    product_name: item.product_name || '',
                     address: item.address || '',
                     pincode: item.pincode || '',
                     city: item.city || '',
@@ -1008,6 +1010,7 @@
                         <td>${item.phoneNo}</td>
                         <td>${item.orderNo}</td>
                         <td>${formatDate(item.dateOfPurchase)}</td>
+                        <td>${item.product_name}</td>
                         <td>${item.address}</td>
                         <td>${item.pincode}</td>
                         <td>${item.city}</td>
@@ -1060,6 +1063,7 @@
                 'Phone No',
                 'Order No',
                 'Date of Purchase',
+                'Product Name',
                 'Address',
                 'Pincode',
                 'City',
@@ -1076,6 +1080,7 @@
                     `"${row.phoneNo}"`,
                     `"${row.orderNo}"`,
                     `"${row.dateOfPurchase}"`,
+                    `"${row.product_name}"`,
                     `"${row.address}"`,
                     `"${row.pincode}"`,
                     `"${row.city}"`,
@@ -1114,6 +1119,7 @@
                 'Phone No': item.phoneNo,
                 'Order No': item.orderNo,
                 'Date of Purchase': item.dateOfPurchase,
+                'Product Name': item.product_name,
                 'Address': item.address,
                 'Pincode': item.pincode,
                 'City': item.city,
